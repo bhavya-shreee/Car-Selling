@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Dealership</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+    }
+
+    /* Hero Section Styles */
+    .hero-section {
+      position: relative;
+      height: 400px;
+      background: url('featured-car.jpg') center/cover no-repeat;
+      color: #dacc0d;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 18px;
+      text-decoration: none;
+      background-color: #195231;
+      color: #cea316;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .cta-button:hover {
+      background-color: #49434e;
+    }
+
+    /* Car Listings Styles */
+    .car-listings {
+      max-width: 1200px;
+      margin: 20px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .car-card {
+      background-color: #3a7979;
+      border: 1px solid #0f0f0f;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(153, 33, 69, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .car-card:hover {
+      transform: scale(1.05);
+    }
+
+    .car-thumbnail img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .car-details {
+      padding: 20px;
+    }
+
+    h2, p {
+      margin: 0;
+    }
+
+    .car-price {
+      color: #758b99;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    /* Search Bar Styles */
+    .search-bar {
+      background-color: #7e818f;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Car Filters Styles */
+    .car-filters {
+      padding: 20px;
+      background-color: #90993f;
+    }
+
+    /* Testimonials Styles */
+    .testimonials-section {
+      padding: 40px;
+      background-color: #723636;
+    }
+
+    .testimonial {
+      margin-bottom: 20px;
+    }
+
+    /* Login and Registration Styles */
+    .form-container {
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #4d4848;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Common Form Styles */
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 8px;
+    }
+
+    input {
+      padding: 10px;
+      margin-bottom: 16px;
+      border: 1px solid #4c612a;
+      border-radius: 4px;
+    }
+
+    button {
+      padding: 10px;
+      background-color: #a78e22;
+      color: #4c612a;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #72818b;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <div class="hero-section">
+    <h1>Explore Our Featured Car</h1>
+    <p>Discover the latest and greatest in automotive technology.</p>
+    <a href="#explore" class="cta-button">Explore Now</a>
+  </div>
+
+  <!-- Car Listings Section -->
+  <div class="car-listings">
+    <!-- Car Card 1 -->
+    <div class="car-card">
+      <div class="car-thumbnail">
+        <img src="car1.jpg" alt="Car 1">
+      </div>
+      <div class="car-details">
+        <h2>Car Model 1</h2>
+        <p>Year: 2023</p>
+        <p class="car-price">$55,000</p>
+      </div>
+    </div>
+
+    <!-- Car Card 2 -->
+    <div class="car-card">
+      <div class="car-thumbnail">
+        <img src="car 2.jpg" alt="Car 2">
+      </div>
+      <div class="car-details">
+        <h2>Car Model 2</h2>
+        <p>Year: 2023</p>
+        <p class="car-price">$30,000</p>
+      </div>
+    </div>
+
+    <!-- Car Card 3 -->
+    <div class="car-card">
+        <div class="car-thumbnail">
+          <img src="car 3.jpg" alt="Car 3">
+        </div>
+        <div class="car-details">
+          <h2>Car Model 2</h2>
+          <p>Year: 2023</p>
+          <p class="car-price">$25,000</p>
+        </div>
+      </div>
+
+    <!-- Add more car cards as needed -->
+
+  </div>
+
+  <!-- Search Bar -->
+  <div class="search-bar">
+    <h2>Search for Your Dream Car</h2>
+    <!-- Add your search form here -->
+    <form>
+      <!-- Add search form elements (make, model, year, price range, etc.) -->
+    </form>
+  </div>
+
+  <!-- Car Filters -->
+  <div class="car-filters">
+    <h2>Filter Cars</h2>
+    <!-- Add car filter options (new vs. used, body style, fuel type, mileage, etc.) -->
+    <!-- Use checkboxes, radio buttons, or dropdowns as needed -->
+  </div>
+
+  <!-- Customer Testimonials -->
+  <div class="testimonials-section">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonial">
+      <p>"Great service and a fantastic selection of cars. I found my dream car here!"</p>
+      <p>- John Doe</p>
+    </div>
+    <div class="testimonial">
+      <p>"The buying process was smooth, and the staff was friendly and knowledgeable."</p>
+      <p>- Jane Smith</p>
+    </div>
+    <!-- Add more testimonials as needed -->
+  </div>
+  <!-- Login Page -->
+  <div class="form-container">
+    <h2>Login</h2>
+    <form>
+      <label for="username">Username or Email:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit">Login</button>
+    </form
+    
+   
+     
+    
+    
+    
+    
+
